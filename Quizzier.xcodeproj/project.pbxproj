@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2715898B285E040300BB87AB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2715898A285E040200BB87AB /* Question.swift */; };
 		27CA25C0285B6CA600CCAA15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA25BF285B6CA600CCAA15 /* AppDelegate.swift */; };
 		27CA25C2285B6CA600CCAA15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA25C1285B6CA600CCAA15 /* SceneDelegate.swift */; };
 		27CA25C4285B6CA600CCAA15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CA25C3285B6CA600CCAA15 /* ViewController.swift */; };
 		27CA25C7285B6CA600CCAA15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CA25C5285B6CA600CCAA15 /* Main.storyboard */; };
 		27CA25C9285B6CA900CCAA15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CA25C8285B6CA900CCAA15 /* Assets.xcassets */; };
 		27CA25CC285B6CA900CCAA15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CA25CA285B6CA900CCAA15 /* LaunchScreen.storyboard */; };
+		27D6DF592868800E00666E83 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D6DF582868800D00666E83 /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2715898A285E040200BB87AB /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		27CA25BC285B6CA600CCAA15 /* Quizzier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quizzier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27CA25BF285B6CA600CCAA15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		27CA25C1285B6CA600CCAA15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		27CA25C8285B6CA900CCAA15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CA25CB285B6CA900CCAA15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27CA25CD285B6CA900CCAA15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27D6DF582868800D00666E83 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				27CA25BF285B6CA600CCAA15 /* AppDelegate.swift */,
 				27CA25C1285B6CA600CCAA15 /* SceneDelegate.swift */,
-				27CA25C3285B6CA600CCAA15 /* ViewController.swift */,
-				27CA25C5285B6CA600CCAA15 /* Main.storyboard */,
+				27D6DF5A286892EE00666E83 /* Controller */,
+				27D6DF5B2868931A00666E83 /* View */,
 				27CA25C8285B6CA900CCAA15 /* Assets.xcassets */,
 				27CA25CA285B6CA900CCAA15 /* LaunchScreen.storyboard */,
 				27CA25CD285B6CA900CCAA15 /* Info.plist */,
+				27D6DF5728687C3E00666E83 /* Model */,
 			);
 			path = Quizzier;
+			sourceTree = "<group>";
+		};
+		27D6DF5728687C3E00666E83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2715898A285E040200BB87AB /* Question.swift */,
+				27D6DF582868800D00666E83 /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		27D6DF5A286892EE00666E83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				27CA25C3285B6CA600CCAA15 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		27D6DF5B2868931A00666E83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				27CA25C5285B6CA600CCAA15 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D6DF592868800E00666E83 /* QuizBrain.swift in Sources */,
 				27CA25C4285B6CA600CCAA15 /* ViewController.swift in Sources */,
+				2715898B285E040300BB87AB /* Question.swift in Sources */,
 				27CA25C0285B6CA600CCAA15 /* AppDelegate.swift in Sources */,
 				27CA25C2285B6CA600CCAA15 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,6 +325,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +337,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -321,6 +354,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +366,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
